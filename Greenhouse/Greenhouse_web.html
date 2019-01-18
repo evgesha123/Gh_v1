@@ -58,11 +58,46 @@
           <li class="active"><a href="#services">Услуги</a></li>
           <li class="active"><a href="#reviews">Отзывы</a></li>
           <li class="active"><a href="#contacts">Контакты</a></li>
+          <li class="fixed_clr" href="#myModal" data-toggle="modal"><a>Вход</a></li>
 
           <!--<li class="active"><a href="#">CONTACTS</a></li>-->
         </ul>
       </div>
     </nav>
+
+
+    <!--Всплывающее окно аутентификации пользователя-->
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="avatar">
+              <i class="fas fa-users fa-4x img_mid"></i>
+            </div>
+            <h4 class="modal-title">Вход</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="/examples/actions/confirmation.php" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Войти</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#">Зарегестрироваться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--конец всплывающего окна-->
 
 
     <div class="block-1"><!-- class = "background"-->
@@ -88,7 +123,7 @@
         <!--arrow-->
         <div id="section04" class="demo">
           <!--<h1>Scroll Down Button #4</h1>-->
-          <a href="#section05"><span></span>Далее</a>
+          <a href="#section05"><span></span><i>Далее</i></a>
         </div>
         <!--arrow ends-->
 
@@ -174,12 +209,14 @@
 
       <div class="block-7_do">
         <div class="do_text_position">
+
           <!--<P>Помогите клиенту принять решение. Добавьте фразу и кнопку целевого действия.</P>-->
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto culpa, dicta eveniet expedita
             harum illum in inventore laudantium minus odit officia perferendis praesentium quibusdam repudiandae sed
             soluta tempora veniam!</p>
         </div>
         <button type="button" class="btn-default"> Целевое действие</button>
+
       </div>
     </div>
 
@@ -253,10 +290,6 @@
         <h1> Отзывы наших клиентов </h1>
       </div>
 
-      <!--<div class="row marg_down">-->
-        <!--<div class="col-sm-6" style="background-color:yellow;"><img class="circle" src="images/face.jpg"></div>-->
-        <!--<div class="col-sm-6" style="background-color:orange;"><img class="circle" src="images/face.jpg"></div>-->
-      <!--</div>-->
 
     </div>
   </div>
@@ -268,18 +301,27 @@
         <h1> Наши контакты </h1>
       </div>
 
-      <div class="numbers_block">
-        <h1> Телефон: +375(29) 123-45-67 </h1>
-        <h1> Почта: hello@firm.com </h1>
-      </div>
+      <!--<div class="numbers_block">-->
+
+      <!--</div>-->
 
       <div class="geolocation_img">
         <img src="images/map1.JPG" width="100%">
+        <div class="adress">
+          <h1> Телефон: +375(29) 123-45-67 </h1>
+          <h1> Почта: hello@firm.com </h1>
+        </div>
       </div>
+
 
     </div>
   </div>
 
+  <section>
+    <div class="footer">
+
+    </div>
+  </section>
 
 
 
