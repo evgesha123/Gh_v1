@@ -10,17 +10,24 @@
   <!--MCSS-->
 
   <!--0_layer_foundation-->
-  <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="css/main.css">-->
+
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="scripts/index.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!--animation-->
+  <link rel="stylesheet" href="scripts/animation-revealator-master/fm.revealator.jquery.css">
+  <script src="scripts/animation-revealator-master/jquery-1.11.3.min.js"></script>
+  <script src="scripts/animation-revealator-master/fm.revealator.jquery.js"></script>
+
 
 
 </head>
@@ -44,11 +51,16 @@
           </button>
 
 
-          <a class="navbar-brand">
-            <i class="fas fa-carrot fa-3x"></i>
-            <i class="fas fa-carrot fa-2x"></i>
-            <i class="fas fa-carrot fa-lg"></i>
+          <a class="header-distributed">
+            <h3>Company<span>logo</span></h3>
           </a>
+
+
+          <!--<a class="navbar-brand">-->
+            <!--<i class="fas fa-carrot fa-3x"></i>-->
+            <!--<i class="fas fa-carrot fa-2x"></i>-->
+            <!--<i class="fas fa-carrot fa-lg"></i>-->
+          <!--</a>-->
 
         </div>
         <ul class="nav navbar-nav navbar-collapse">
@@ -141,25 +153,30 @@
         </div>
       </div>
 
-      <div class="block-2_R" id="about">
+      <!--animate up block-->
+      <div class="revealator-slideup revealator-delay4 revealator-once">
+        <div class="block-2_R" id="about">
 
-        <h1>О нашей компании</h1>
-        <h2> Ключевые слова о компании </h2>
+          <h1>О нашей компании</h1>
+          <h2> Ключевые слова о компании </h2>
 
-        <hr> <!--line-->
+          <hr> <!--line-->
 
-        <p><span>Коротко представьтесь и расскажите о компании или сервисе в 3-4 строках. С какими клиентами вы
+          <p><span>Коротко представьтесь и расскажите о компании или сервисе в 3-4 строках. С какими клиентами вы
           работаете, что вас вдохновляет. Чем гордится ваша команда, какие у нее ценности и мотивация.</span>
-        </p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
 
   <!--<div class="saw">   &lt;!&ndash;block-3&ndash;&gt;-->
+
   <div class="block-3">
 
     <div class="container-fluid marg_down" id="services">
+
       <h1> Наши услуги </h1>
       <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur at aut, doloribus harum impedit itaque iure minus necessitatibus neque numquam quisquam voluptatem? Enim et nobis quaerat, quasi quis repellat!</span><span>Animi consequatur ipsum iste mollitia quam vero vitae. A, aliquam, autem cum cumque dignissimos distinctio est eum facere fugit maiores molestiae, nostrum odio quam quibusdam repellat saepe sapiente sunt ut.</span>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cupiditate deleniti dignissimos
@@ -208,19 +225,24 @@
 
 
       <div class="block-7_do">
-        <div class="do_text_position">
 
-          <!--<P>Помогите клиенту принять решение. Добавьте фразу и кнопку целевого действия.</P>-->
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto culpa, dicta eveniet expedita
-            harum illum in inventore laudantium minus odit officia perferendis praesentium quibusdam repudiandae sed
-            soluta tempora veniam!</p>
+        <!--animated left block-->
+        <div class="revealator-slideright revealator-once">
+          <div class="do_text_position">
+
+            <!--<P>Помогите клиенту принять решение. Добавьте фразу и кнопку целевого действия.</P>-->
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto culpa, dicta eveniet expedita
+              harum illum in inventore laudantium minus odit officia perferendis praesentium quibusdam repudiandae sed
+              soluta tempora veniam!</p>
+          </div>
+
+          <button type="button" class="btn-default"> Целевое действие</button>
         </div>
-        <button type="button" class="btn-default"> Целевое действие</button>
-
       </div>
     </div>
 
   </div>    <!--container-fluid ends-->
+
   <!--</div>    &lt;!&ndash;saw ends&ndash;&gt;-->
 
 
@@ -232,50 +254,57 @@
         <h1> Почему мы? </h1>
       </div>
 
-      <div class="block-advantages">
-        <div class="row">
+      <!--animate up block-->
+      <div class="revealator-slideup revealator-once">
 
-          <div class="col-sm-4">
-            <h1><i class="fas fa-check fa-lg"></i> Преимущество 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
-              quam, quas veritatis?</p>
-          </div>
-
-          <div class="col-sm-4">
-            <h1><i class="fas fa-check fa-lg"></i> Преимущество 2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
-              quam, quas veritatis?</p>
-          </div>
-
-          <div class="col-sm-4">
-            <h1><i class="fas fa-check fa-lg"></i> Преимущество 3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
-              quam, quas veritatis?</p>
-          </div>
-
-          <!--нижние преимущества-->
-          <div class="row_down">
+        <div class="block-advantages">
+          <div class="row">
 
             <div class="col-sm-4">
-              <h1><i class="fas fa-check fa-lg"></i> Преимущество 4</h1>
+              <h1><i class="fas fa-check fa-lg"></i> Преимущество 1</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
                 quam, quas veritatis?</p>
             </div>
 
             <div class="col-sm-4">
-              <h1><i class="fas fa-check fa-lg"></i> Преимущество 5</h1>
+              <h1><i class="fas fa-check fa-lg"></i> Преимущество 2</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
                 quam, quas veritatis?</p>
             </div>
 
             <div class="col-sm-4">
-              <h1><i class="fas fa-check fa-lg"></i> Преимущество 6</h1>
+              <h1><i class="fas fa-check fa-lg"></i> Преимущество 3</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
                 quam, quas veritatis?</p>
             </div>
+
+            <!--нижние преимущества-->
+            <div class="row_down">
+
+              <div class="col-sm-4">
+                <h1><i class="fas fa-check fa-lg"></i> Преимущество 4</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
+                  quam, quas veritatis?</p>
+              </div>
+
+              <div class="col-sm-4">
+                <h1><i class="fas fa-check fa-lg"></i> Преимущество 5</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
+                  quam, quas veritatis?</p>
+              </div>
+
+              <div class="col-sm-4">
+                <h1><i class="fas fa-check fa-lg"></i> Преимущество 6</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id labore magnam molestias nisi non porro
+                  quam, quas veritatis?</p>
+              </div>
+            </div>
+
           </div>
 
         </div>
+
+        <!--animate end-->
       </div>
     </div>
 
@@ -317,21 +346,83 @@
     </div>
   </div>
 
+  <!--<section>-->
+    <!--<div class="footer">-->
+
+    <!--</div>-->
+  <!--</section>-->
+
+
   <section>
-    <div class="footer">
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Company<span>logo</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Blog</a>
+        ·
+        <a href="#">Pricing</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">Faq</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Greenhouse technologies &copy; 2019</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>21 Revolution Street</span> Minsk, Belarus</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+375(29) 123-45-67 </p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@company.com</a></p>
+      </div>
 
     </div>
-  </section>
 
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>Мы в социальных сетях</span>
+        Подписывайся и следи за новостями!
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+  </section>
 
 
 </header>
 
 
-<script>
+<script src="scripts/index.js"></script>
 
-
-</script>
 </body>
 </html>
 
