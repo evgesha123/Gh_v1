@@ -3,11 +3,20 @@
 // slowly going/slide to # on page
 
 $(function() {
-  $('a[href*=#]').on('click', function(e) {
+  $('a[href=#about], a[href=#services], a[href=#reviews], a[href=#contacts]').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 200}, 700, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top-200}, 700, 'linear');
   });
 });
+
+$(function() {
+  $('a[href=#myModal]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
+  });
+});
+
+
 
 // -200 это высота до заголовка
 
