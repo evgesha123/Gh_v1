@@ -48,6 +48,29 @@
       <li class="fixed_clr"><a href="Greenhouse_web.html">Выход</a></li>
     </ul>
 
+    <!--time-->
+    <div id="clock" class="clk_position">
+      <span class="time" id="hours"></span><span class="time" id="min"></span>
+    </div>
+
+    <script> // time script
+
+      var hours = document.getElementById("hours");
+      var minutes = document.getElementById("min");
+
+      function tick() {
+        var time = new Date();
+        var h = time.getHours();
+        var m = time.getMinutes();
+
+        hours.innerHTML = h.toString() + " : ";
+        minutes.innerHTML = m.toString();
+      }
+
+      setInterval(tick, 300); // что бы была точность, если допустим клиент зайдет на сайт, между сменой секунд
+    // end time script
+    </script>
+
 
   </div>
 </nav>
@@ -129,12 +152,14 @@
 
   </div>
 
-  <!-- weather widget start -->
 
+
+
+
+  <!-- weather widget start -->
   <a target="_blank" href="https://nochi.com/weather/minsk-17469"><img
     src="https://w.bookcdn.com/weather/picture/32_17469_1_20_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=64172"
     alt="booked.net"/></a>
-
   <!-- weather widget end -->
 
 </div>
