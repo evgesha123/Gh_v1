@@ -938,6 +938,8 @@ button, input, optgroup, select, textarea {
 /*}*/
 
 
+
+
 footer{
   position: relative;
   bottom: -640px;
@@ -1120,4 +1122,13 @@ footer{
   }
 
 }
+
+
+/*!*Добавление гугл карты на странцу*!*/
+/*!* Set the size of the div element that contains the map *!*/
+/*#map {*/
+/*height: 400px;  !* The height is 400 pixels *!*/
+/*width: 100%;  !* The width is the width of the web page *!*/
+/*}*/
+/*!*конец блока карты *!*/
 

@@ -24,6 +24,7 @@ $(function() {
 
 
 
+
 // ТОже самое что и выше
 // // slowly going/slide to # on page
 
